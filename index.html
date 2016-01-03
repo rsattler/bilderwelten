@@ -1,13 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-     <meta charset="UTF-8">
-     <title>Bilderwelten</title>
-  </head>
-  <body>
-    <center>
-      <p>In Kürze mehr!</p>
-      <img src="test.jpg" style="height:960px">
-    </center>
-  </body>
-</html>
+---
+layout: default
+menu-weight: 1
+menu-title: Startseite
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

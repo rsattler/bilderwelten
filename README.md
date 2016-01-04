@@ -28,7 +28,7 @@ Domain
 
 Die sogennante Domain, der Hauptbestandteile der Adresse der Homepage, ist separat angemietet und ist 'bilderwelten.regina-sattler.de'.
 Um Git wissen zu lassen, unter welcher Adresse die Homepage erscheinen soll, beinhaltet die Datei CNAME im Repository den Domainnamen.
-Separat ist die Domain in einem Benutzerkonto von 'sattlerc' unter <http://www.inwx.de> passend konfiguriert worden.
+Separat ist die Domain in einem Benutzerkonto von 'sattlerc' unter <http://www.inwx.de/> passend konfiguriert worden.
 
 Aufbau
 ------
@@ -48,9 +48,9 @@ HTML
 
 Hypertext Markup Language (abgekuerzt HTML) ist die Sprache, in der Webseiten geschrieben werden.
 Das Kernmerkmal sind sogennante Tags zum semantischen Strukturieren der Seite, z.B.
-
-> <title>Browserfenster-Titel</title>
-
+```
+<title>Browserfenster-Titel</title>
+```
 zum Spezifizieren des Titels.
 Tags koennen geschachtelt werden.
 Fuer Einfuehrung und Referenz zu HTML siehe:
@@ -73,9 +73,9 @@ Template-Befehle (Jekyll)
 
 Innerhalb aller HTML-Dateien koennen Template-Befehle verwendet werden, zum Beispiel um andere HTML-Bausteine einzubinden.
 Diese haben die Form '{% ... %}', zum Beispiel
-
-> {% include menu.html %}
-
+```
+{% include menu.html %}
+```
 zum Einbinden des Menues.
 Fuer Informationen zu zum Template-System Jekyll/Liquid siehe:
 
@@ -86,17 +86,17 @@ Fuer Informationen zu zum Template-System Jekyll/Liquid siehe:
 Wie erstelle ich eine neue Seite?
 ---------------------------------
 
-Lege eine HTML-Datei <name>.html im Ordner an.
-Der <name> bedeutet nur, wie die Adresse dieser Seite im Browser aussieht
+Lege eine HTML-Datei wie zum Beispiel page-name.html im Ordner an.
+Der Dateiname ist spaeter nur revelant fuer die Adressezeile des Browser
 Die ersten Zeilen sollten wie folgt aussehen:
-
-> ---
-> layout: default
-> menu-weight: 1
-> menu-title: Seitenname
-> ---
-
-Der Eintrag 'layout' gibt dem Template-System die Information, mit welchem Layout die Seite zusammengesetzt werden soll, in diesem Fall das Default-Layout, zu finden in _layout/default.html.
+```
+---
+layout: default
+menu-weight: 1
+menu-title: Seitenname
+---
+```
+Der Eintrag 'layout' gibt dem Template-System die Information, mit welchem Layout die Seite zusammengesetzt werden soll, in diesem Fall das Default-Layout, zu finden in '_layout/default.html'.
 Der Eintrag 'menu-weight' gibt an, wo die Seite im Menue stehen soll; Seiten mit niedrigerem Gewicht stehen weiter vorne als Seiten mit hoeherem Gewicht.
 Der Eintrag 'menu-title' git an, wie die Seite im Menue heissen soll
 Wenn die Seite nicht im Menue auftauchen soll, muessen die letzten beiden Zeilen geloescht werden.
@@ -105,8 +105,8 @@ Nach diesen Template-Befehlen geht der eigentliche HTML-Seiteninhalt los.
 Wie editiere ich eine Datei mit Notepad++?
 ------------------------------------------
 
-1. Rechtsklicken
-2. Edit with Notepad++
+1. Rechtsklicken.
+2. Edit with Notepad++.
 
 Wie schaue ich die Homepage lokal vor?
 --------------------------------------
@@ -156,9 +156,9 @@ Images
 
 In diesen Unterordner legen wir alle (moeglicherweise spaeter) zu verwendenden Bilddateien hinein.
 Wenn ein Bild zum Beispiel den Pfad 'Images/foto.jpg' hat, dann kann es in HTML-Dateien wie folgt eingebunden werden:
-
-> <img src="Images/foto.jpg">
-
+```
+<img src="Images/foto.jpg">
+```
 serve.cmd
 ---------
 

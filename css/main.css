@@ -104,13 +104,20 @@ section {
 }
 
 .float-img {
+	width:200px;
     float:right;
-    width:300px;
-    max-width:300px;
     margin-left:16px;
     margin-right:0px;
     margin-top:12px;
-    margin-bottom:12px;
+    margin-bottom:12px;	
+}
+
+q {
+	font-style:italic;
+}
+
+section img {
+	width:200px;
 }
 
 p {

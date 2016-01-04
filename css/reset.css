@@ -35,11 +35,12 @@ blockquote, q {
     quotes: none;
 }
 blockquote:before,
+q:before{
+    content: "„"
+}
 blockquote:after,
-q:before,
 q:after{
-    content: '';
-    content: none;
+    content: '“';
 }
 table {
     border-collapse: collapse;

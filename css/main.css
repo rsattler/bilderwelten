@@ -3,7 +3,7 @@ body {
 }
 
 #background {
-    background-image:url("/Images/P1020097-scaled-1500.JPG");
+    background-image:url("/Images/Lichtblick (2).JPG");
     background-position:center top;
     background-size:cover;
     background-repeat:no-repeat;
@@ -18,12 +18,21 @@ body {
 
 h1 {
     display:block;
-    font-family:"Maven Pro",sans-serif;
-    font-weight:900;
-    font-size:96pt;
+    font-family:"arizonia",sans-serif;
+    font-weight:600;
+    font-size:60pt;
     margin:16px 0px;
     color: #fff;
-    text-transform:uppercase;
+    
+}
+
+h2 {
+    display:block;
+    font-family:"arizonia",sans-serif;
+    font-weight:600;
+    font-size:38pt;
+    margin:16px 0px;
+    color: #fff;
 }
 
 nav {

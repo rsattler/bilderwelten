@@ -1,13 +1,13 @@
-body {
+#header {
     text-align:center;
+    width:100%;
 }
 
 #background {
-    background-image:url("/Images/Lichtblick (2).JPG");
+    position:fixed;
+    background-image:url("/Images/Lichtblick (2).jpg");
     background-position:center top;
     background-size:cover;
-    background-repeat:no-repeat;
-    background-color:black;
     position:fixed;
     left:0;
     top:0;
@@ -16,23 +16,66 @@ body {
     z-index:-1;
 }
 
-h1 {
+#main {
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+}
+
+#left {
+    width:192px;
+    height:100%;
+    float:left;
+}
+
+#right {
+    height:100%;
+    float:right;
+    color:#fff;
+    font-size:14pt;
+}
+
+#right > figure {
+    padding:16px;
+}
+
+#right blockquote {
+    font-style:italic;
+}
+
+#right small {
+    font-size:12pt;
+}
+
+#inner {
+    height:100%;
+    overflow:hidden;
+}
+
+#content {
+    padding:16px 32px;
+    text-align:justify;
+    font-family:sans-serif;
+    line-height:1.2em;
+    background:#fff;
+}
+
+h1, h2 {
     display:block;
-    font-family:"arizonia",sans-serif;
+    font-family:Arizonia,sans-serif;
     font-weight:600;
-    font-size:60pt;
-    margin:16px 0px;
-    color: #fff;
-    
+    color:#fff;
+}
+
+h1 {
+    font-size:72pt;
+    margin:32px 0px;
 }
 
 h2 {
-    display:block;
-    font-family:"arizonia",sans-serif;
-    font-weight:600;
-    font-size:38pt;
-    margin:16px 0px;
-    color: #fff;
+    font-size:42pt;
+    margin:32px 0px;
 }
 
 nav {
@@ -40,12 +83,11 @@ nav {
     font-weight:600;
     font-size:12pt;
     text-decoration:none;
+    padding:16px;
 }
 
 nav ul {
-    display:inline-block;
     list-style-type:none;
-    overflow:hidden;
     margin:0;
     padding:0;
     padding-left:1px;
@@ -53,10 +95,9 @@ nav ul {
 }
 
 nav li {
-    float:left;
     margin-left:-1px;
     margin-top:-1px;
-    width:160px;
+    width:100%;
 }
 
 nav a {
@@ -91,16 +132,6 @@ td:first-child {
 #wrapper {
     display:inline-block;
     max-width:955px;
-}
-
-section {
-    background:#fff;
-    padding:16px 32px;
-    margin:8px 0px;
-    text-align:justify;
-    font-family:sans-serif;
-    line-height:1.2em;
-    overflow:hidden;
 }
 
 .block-img {

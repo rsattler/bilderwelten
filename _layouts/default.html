@@ -2,14 +2,29 @@
 <html>
   {% include head.html %}
   <body>
-    <div id="background"></div>
-    <div id="wrapper">
-      {% include header.html %}
-      {% include menu.html %}
-      <section>
-        {{ content }}
-      </section>
-      {% include footer.html %}
+    <div id="header">
+      <div id="background"></div>
+      <h1>Bilderwelten</h1>
+      <h2>von Regina Sattler</h2>
     </div>
+    <div id="main">
+      <div id="centered">
+	<div id="left">
+          {% include menu.html %}
+	</div>
+	<div id="right">
+	  <figure class="float-img">
+	    <img src="Images/regina-feathered-scaled.png">
+	    <figcaption><blockquote>...die Kunst spricht von Seele zu Seele.</blockquote><small>(Oscar Wilde)</small></figcaption>
+	  </figure>
+	</div>
+	<div id="inner">
+	  <section id="content">
+	    {{ content }}
+	  </section>
+          {% include footer.html %}
+	</div>
+      </div>
+    </div
   </body>
 </html>
